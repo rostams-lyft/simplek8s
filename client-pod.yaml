@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels:
+    compoent: web
+spec:
+  containers:
+    - name: client
+      image: rostam63/multi-client
+      ports:
+        - containerPort: 3000

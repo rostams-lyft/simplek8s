@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-node-port
+spec:
+  type: NodePort
+  ports:
+    - port: 3050 # Used by other Pods to talk to this service
+      targetPort: 3000 # The port that is going to open inside the target Pod. Nobody from outside usually cares about it.
+      nodePort: 31515 # to access the service inside the browsers
+  selector:
+    component: web
