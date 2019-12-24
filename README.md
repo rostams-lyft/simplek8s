@@ -50,6 +50,8 @@ docker exec -it <container id> sh
 
 docker system prune -a 
 
+docker-compose up
+
 ```
 
 ### Reconfiguring Docker CLI
