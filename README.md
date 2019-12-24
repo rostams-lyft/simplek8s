@@ -18,4 +18,8 @@ kubectl delete -f <config file>
 
 kubectl delete -f client-pod.yaml
 
+kubectl get pod -o wide
+
+minikube ip
+
 ```
