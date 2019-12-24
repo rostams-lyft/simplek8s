@@ -48,6 +48,8 @@ docker logs <container id>
 
 docker exec -it <container id> sh
 
+docker system prune -a 
+
 ```
 
 ### Reconfiguring Docker CLI
