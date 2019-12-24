@@ -2,7 +2,7 @@
 
 ## Kubectl commands
 
-```bash
+```shell script
 
 kubectl get services
 
@@ -27,7 +27,7 @@ kubectl set image deployment/client-deployment client=stephengrider/multi-client
 
 ## Minikube commands
 
-```bash
+```shell script
 
 minikube ip
 
@@ -35,10 +35,18 @@ minikube ip
 
 ## Docker commands
 
-```bash
+```shell script
 
 docker build -t rostam63/multi-client .
 
 docker push rostam63/multi-client
 
+```
+
+### Reconfiguring Docker CLI
+
+Reconfigure docker CLI to connect to docker instance inside Kubernetes node.
+
+```shell script
+eval $(minikube docker-env)
 ```
