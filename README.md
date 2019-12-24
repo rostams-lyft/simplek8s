@@ -1,6 +1,6 @@
 # simplek8s
 
-## Useful commands
+## Kubectl commands
 
 ```bash
 
@@ -20,6 +20,22 @@ kubectl delete -f client-pod.yaml
 
 kubectl get pod -o wide
 
+```
+
+## Minikube commands
+
+```bash
+
 minikube ip
+
+```
+
+## Docker commands
+
+```bash
+
+docker build -t rostam63/multi-client .
+
+docker push rostam63/multi-client
 
 ```
