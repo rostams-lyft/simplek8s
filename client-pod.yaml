@@ -10,3 +10,6 @@ spec:
       image: rostam63/multi-client
       ports:
         - containerPort: 3000
+
+# If you keep name and type the same, and change something else in this file
+# it is going to update the pod not creating a new one.
